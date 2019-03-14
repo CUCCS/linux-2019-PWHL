@@ -87,7 +87,6 @@ mkisofs -r -V "Custom Ubuntu Install CD" \
 sudo bash gen_iso.sh
 ```
 ![image](https://github.com/CUCCS/linux-2019-PWHL/blob/hw1/img1/img8.png)
-![image](https://github.com/CUCCS/linux-2019-PWHL/blob/hw1/img1/img7.png)
 - 下载镜像
 ```
 #使用psftp.exe下载
