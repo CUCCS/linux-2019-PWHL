@@ -9,7 +9,7 @@ before_install:
    - tar --xz -xvf shellcheck-"${scversion}".linux.x86_64.tar.xz
    - sudo cp shellcheck-"${scversion}"/shellcheck /usr/bin/
    - /usr/bin/shellcheck --version 
-   - sudo spt-get install imagemagick
+   - sudo apt-get install imagemagick
    - sudo apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
    - sudo apt-get install bc
 
