@@ -5,14 +5,15 @@ language: sh
 before_install:
    - sudo apt-get update -q
    - export scversion="stable" # or "v0.4.7", or "latest"
-   #- wget "http://sec.cuc.edu.cn/huangwei/course/LinuxSysAdmin/exp/chap0x04/web_log.tsv.7z"
-   - wget "http://sec.cuc.edu.cn/huangwei/course/LinuxSysAdmin/exp/chap0x04/worldcupplayerinfo.tsv"
+   - wget "https://storage.googleapis.com/shellcheck/shellcheck-${scversion}.linux.x86_64.tar.xz"
    - tar --xz -xvf shellcheck-"${scversion}".linux.x86_64.tar.xz
    - sudo cp shellcheck-"${scversion}"/shellcheck /usr/bin/
    - /usr/bin/shellcheck --version 
    - sudo apt-get install imagemagick
    - sudo apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
    - sudo apt-get install bc
+   - wget "http://sec.cuc.edu.cn/huangwei/course/LinuxSysAdmin/exp/chap0x04/web_log.tsv.7z"
+   - wget "http://sec.cuc.edu.cn/huangwei/course/LinuxSysAdmin/exp/chap0x04/worldcupplayerinfo.tsv"
 
 script:
   - bash test.sh
