@@ -15,21 +15,21 @@ before_install:
 
 script:
   - bash test.sh
-  - bash hw4/实验四/image.sh -d  hw4/实验四/test_image -c
+  - bash 实验四/image.sh -d  实验四/test_image -c
 
-  - bash hw4/实验四/image.sh -d hw4/实验四/test_image -r 700x700
-  - bash hw4/实验四/image.sh -d hw4/实验四/test_image -q 70
-  - bash hw4/实验四/image.sh -d hw4/实验四/test_image -w "I am water"
-  - bash hw4/实验四/image.sh -d hw4/实验四/test_image --prefix abc
-  - bash hw4/实验四/image.sh -d hw4/实验四/test_image --postfix ijk
-  - bash hw4/实验四/image.sh -d hw4/实验四/test_image -r 700x700 --prefix abd --postfix ijk
-  - bash hw4/实验四/Web.sh -h
-  - bash hw4/实验四/Web.sh -i
-  - bash hw4/实验四/Web.sh -u
-  - bash hw4/实验四/Web.sh -c
-  - bash hw4/实验四/Web.sh -e
-  - bash hw4/实验四/Web.sh -s
-  - bash hw4/实验四/worldcupplayer.sh
+  - bash 实验四/image.sh -d 实验四/test_image -r 700x700
+  - bash 实验四/image.sh -d 实验四/test_image -q 70
+  - bash 实验四/image.sh -d 实验四/test_image -w "I am watermark"
+  - bash 实验四/image.sh -d 实验四/test_image --prefix abc
+  - bash 实验四/image.sh -d 实验四/test_image --postfix ijk
+  - bash 实验四/image.sh -d 实验四/test_image -r 700x700 --prefix abd --postfix ijk
+  - bash 实验四/Web.sh -h
+  - bash 实验四/Web.sh -i
+  - bash 实验四/Web.sh -u
+  - bash 实验四/Web.sh -c
+  - bash 实验四/Web.sh -e
+  - bash 实验四/Web.sh -s
+  - bash 实验四/worldcupplayer.sh
 
 after_script:
   - /usr/bin/shellcheck test.sh
