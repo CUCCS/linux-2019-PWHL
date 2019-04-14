@@ -3,15 +3,33 @@
 language: sh
 
 before_install:
-    - sudo apt-get update -q
-    - export scversion="stable" # or "v0.4.7", or "latest"
-    - wget "https://storage.googleapis.com/shellcheck/shellcheck-${scversion}.linux.x86_64.tar.xz"
-    - tar --xz -xvf shellcheck-"${scversion}".linux.x86_64.tar.xz
-    - sudo cp shellcheck-"${scversion}"/shellcheck /usr/bin/
-    - /usr/bin/shellcheck --version
+   - sudo apt-get update -q
+   - export scversion="stable" # or "v0.4.7", or "latest"
+   - wget "https://storage.googleapis.com/shellcheck/shellcheck-${scversion}.linux.x86_64.tar.xz"
+   - tar --xz -xvf shellcheck-"${scversion}".linux.x86_64.tar.xz
+   - sudo cp shellcheck-"${scversion}"/shellcheck /usr/bin/
+   - /usr/bin/shellcheck --version 
+   - sudo spt-get install imagemagick
+   - sudo apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
+   - sudo apt-get install bc
 
 script:
   - bash test.sh
+  - bash hw4/实验四/image.sh -d  hw4/实验四/test_image -c
+
+  - bash hw4/实验四/image.sh -d hw4/实验四/test_image -r 700x700
+  - bash hw4/实验四/image.sh -d hw4/实验四/test_image -q 70
+  - bash hw4/实验四/image.sh -d hw4/实验四/test_image -w "I am water"
+  - bash hw4/实验四/image.sh -d hw4/实验四/test_image --prefix abc
+  - bash hw4/实验四/image.sh -d hw4/实验四/test_image --postfix ijk
+  - bash hw4/实验四/image.sh -d hw4/实验四/test_image -r 700x700 --prefix abd --postfix ijk
+  - bash hw4/实验四/Web.sh -h
+  - bash hw4/实验四/Web.sh -i
+  - bash hw4/实验四/Web.sh -u
+  - bash hw4/实验四/Web.sh -c
+  - bash hw4/实验四/Web.sh -e
+  - bash hw4/实验四/Web.sh -s
+  - bash hw4/实验四/worldcupplayer.sh
 
 after_script:
   - /usr/bin/shellcheck test.sh
