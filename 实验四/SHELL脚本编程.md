@@ -173,11 +173,18 @@ code:500   times: 3    proportion 0%
 ```
 - 给定URL输出TOP 100访问来源主机
 ```
-/ksc.html/shuttle/missions/missions.html
-      1 scooter.pa-x.dec.com
-      1 205.139.35.40
-      1 163.135.192.101
-      1 152.163.192.70
+1020 edams.ksc.nasa.gov
+    251 163.206.89.4
+    239 128.217.62.1
+    219 n1144637.ksc.nasa.gov
+    184 128.217.62.2
+    182 163.205.3.104
+    136 n1121796.ksc.nasa.gov
+    127 163.205.23.76
+    123 163.205.11.31
+    116 n1376232.ksc.nasa.gov
+    116 128.159.144.83
+
 ```
 ### 参考实验
 - [snRNA](https://github.com/CUCCS/linux/tree/master/2017-1/snRNA/ex4)
