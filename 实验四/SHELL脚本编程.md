@@ -38,7 +38,7 @@ options:
 - 支持批量重命名（统一添加文件名前缀或后缀，不影响原始文件扩展名）
 
 ![image](https://raw.githubusercontent.com/CUCCS/linux-2019-PWHL/hw4/%E5%AE%9E%E9%AA%8C%E5%9B%9B/image4/add_prefix.png)
-![image](https://raw.githubusercontent.com/CUCCS/linux-2019-PWHL/hw4/%E5%AE%9E%E9%AA%8C%E5%9B%9B/image4/add_postfix.png)
+![image](https://raw.githubusercontent.com/CUCCS/linux-2019-PWHL/hw4/实验四/image4/postfix.png)
 
 - 支持将png/svg图片统一转换为jpg格式图片
 
